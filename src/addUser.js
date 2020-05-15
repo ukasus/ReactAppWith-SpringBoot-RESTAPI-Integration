@@ -11,7 +11,7 @@ class addUser extends Component{
             email: this.email,
             phone: this.phone
         }
-        axios.post("https://fathomless-falls-47870.herokuapp.com/addUser",user)
+        axios.post("http://restapibyuk.herokuapp.com/addUser",user)
        
 
 

@@ -20,7 +20,7 @@ class AppMain extends Component{
     UNSAFE_componentWillMount()
     {
          
-     axios.get("https://fathomless-falls-47870.herokuapp.com/getUser").then(res=>{
+     axios.get("http://restapibyuk.herokuapp.com/getUser").then(res=>{
        user=res.data
         this.setState({
             userData:user,
@@ -30,7 +30,7 @@ class AppMain extends Component{
     });
     }
     componentDidUpdate(){
-        axios.get("https://fathomless-falls-47870.herokuapp.com/getUser").then(res=>{
+        axios.get("http://restapibyuk.herokuapp.com/getUser").then(res=>{
        user=res.data
         this.setState({
             userData:user,
